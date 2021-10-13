@@ -15,15 +15,15 @@ function divWithP() {
 divWithP();
 
 /*2.3 Inserta dinamicamente en un html un div que contenga 6(loop del 0 al - 6) p utilizando un loop con javascript.*/
-const newDivThere = document.querySelector('.there')
-
-for (let i = 0; i < 6; i++) {
-    let newDivTwo = document.createElement('p');
-    let addItems = document.createTextNode(`loop`);
-    newItem.appendChild(newContent);
-    newDivThere.appendChild(newItem)
-    
+function addDivWithLoop() {
+  let elementDiv = document.createElement('div');
+  document.body.appendChild(elementDiv);
+  for (let index = 1; index =< 6; index++) {
+      let elementP = document.createElement('p');
+      elementDiv.appendChild(elementP);
+  }
 }
+addDivWithLoop();
 
 /*2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.*/
 let addText = document.querySelector('.addText')
@@ -49,3 +49,4 @@ function addText() {
     element.insertAdjacentElement("beforeend", newP);
   }
 }
+addText();
